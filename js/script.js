@@ -22,6 +22,13 @@ var game = {
         if (!this.on) {
             return;
         }
+        var i = Math.floor(Math.random() * 4);
+        var j = Math.floor(Math.random() * 4);
+        while (this.grid[i][j] != 0) {
+            i = Math.floor(Math.random() * 4);
+            j = Math.floor(Math.random() * 4);
+        }
+        this.grid[i][j] =  (Math.random() < 0.1) ? 4 : 2;
         var lose = true;
         for (var i = 0; i < game.SIZE; i++) {
             for (var j = 0; j < game.SIZE; j++) {
@@ -35,13 +42,6 @@ var game = {
             this.lose();
             return;
         }
-        var i = Math.floor(Math.random() * 4);
-        var j = Math.floor(Math.random() * 4);
-        while (this.grid[i][j] != 0) {
-            i = Math.floor(Math.random() * 4);
-            j = Math.floor(Math.random() * 4);
-        }
-        this.grid[i][j] =  (Math.random() < 0.1) ? 4 : 2;
     },
     shift : function (dir) {
         if (!this.on) {
@@ -206,4 +206,22 @@ function init() {
     game.fill();
     game.fill();
     game.update();
+}
+
+window.onkeyup = function(e) {
+    var key = e.keyCode ? e.keyCode : e.which;
+    switch (key) {
+        case 37:
+            game.shift(LEFT);
+            break;
+        case 38:
+            game.shift(UP);
+            break;
+        case 39:
+            game.shift(RIGHT);
+            break;
+        case 40:
+            game.shift(DOWN);
+            break;
+    }
 }
