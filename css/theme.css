@@ -1,0 +1,53 @@
+body {
+    width: 600px;
+    font-family: sans-serif;
+}
+div {
+    float: left;
+    margin: none;
+}
+#wrapper {
+    width: 100%;
+    background-color: #FFCCCC;
+}
+#heading {
+    width: 100%;
+}
+p {
+    font-size: 24pt;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+}
+#footer {
+    width: 100%;
+}
+#board {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 400px;
+    height: 400px;
+}
+.cell {
+    background-color: #CCFFCC;
+    width: 20%;
+    height: 20%;
+    margin: 2.5%;
+    font-size: 52pt;
+}
+button {
+    float: left;
+    font-size: 18pt;
+    text-align: center;
+    height: 50px;
+    width: 50%;
+    margin: auto;
+}
+#up, #down{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+h1, p {
+    text-align: center;
+}
