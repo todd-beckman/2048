@@ -2,7 +2,7 @@
 
 Just an ugly clone by Todd Beckman.
 
-There's a story to this one. The internet at my house died and I was bored. 2048 seemed like a good way to fix the boredom
+There's a story to this one. The internet at my house died and I was bored. 2048 seemed like a good way to fix the boredom. Naturally I didn't have internet to open it so I had to make my own.
 
 
 ## Usage
