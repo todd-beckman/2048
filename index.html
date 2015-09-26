@@ -1,1 +1,21 @@
-Page
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
+    </head>
+    <body onload="init()">
+        <div id="wrapper">
+            <div id="heading">
+                <p>Score: <span id="score"></p>
+            </div>
+            <div id="board"></div>
+            <div id="footer">
+                <button id='up' onclick="game.shift(0)">Up</button>
+                <button id='left' onclick="game.shift(2)">Left</button>
+                <button id='right' onclick="game.shift(3)">Right</button>
+                <button id='down' onclick="game.shift(1)">Down</button>
+            </div>
+        </div>
+    </body>
+</html>
